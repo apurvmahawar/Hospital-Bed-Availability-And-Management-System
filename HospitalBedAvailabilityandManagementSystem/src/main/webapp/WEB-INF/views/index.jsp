@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Centralized Hospital Management Portal</h1>
+	<h1>Login portal</h1>
 	<hr />
-	<h3>Welcome</h3>
-	
-	<a href='login.html'>Login Here</a>
+	<a href="<spring:url value='/user/admin'/>">Admin Login</a>
+	<hr />
+	<a href="<spring:url value='/user/hospitaladmin'/>">Hospital Admin
+		Login</a>
+
 </body>
 </html>

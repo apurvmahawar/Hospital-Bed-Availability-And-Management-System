@@ -31,6 +31,14 @@ public class Admin {
 		System.out.println("In Constructor of--> " + getClass().getName());
 	}
 
+	public Admin(Integer adminID, String userName, String password, List<Hospital> hospitalId) {
+		super();
+		this.adminID = adminID;
+		this.userName = userName;
+		this.password = password;
+		this.hospitalId = hospitalId;
+	}
+
 	public Integer getAdminID() {
 		return adminID;
 	}
@@ -68,7 +76,5 @@ public class Admin {
 		return "Admin [adminID=" + adminID + ", userName=" + userName + ", password=" + password + ", hospitalId="
 				+ hospitalId + "]";
 	}
-
-	
 
 }
